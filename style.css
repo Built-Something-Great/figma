@@ -6,9 +6,13 @@
 }
 
 .header {
-    height: 100vh;
-    width: 100%;
-    background-color: #F9F9F9;
+    /* Rectangle 4 */
+    height: 630px;
+    left: 0px;
+    top: -1.5px;
+
+    background: #F9F9F9;
+    ;
 }
 
 .header .bgimg img {
@@ -16,7 +20,7 @@
     width: 752px;
     height: 448px;
     left: 613px;
-    top: 130.5px;
+    top: 132px;
 }
 
 .logo {
@@ -50,7 +54,7 @@
     position: absolute;
     width: 205px;
     height: 48px;
-    left: 1085px;
+    left: 1115px;
     top: 26px;
     background: #FE0000;
     border-radius: 8px;
@@ -118,6 +122,7 @@
     top: 420px;
     background: #FE0000;
     border-radius: 8px;
+    border: none;
 }
 
 #btn2 a {
@@ -134,14 +139,114 @@
     color: #FFFFFF
 }
 
-.statistics {
+/* .statistics {
     position: absolute;
     width: 1140px;
     height: 130px;
     left: 163px;
-    top: 560px;
+    top: 561.5px;
 
     /* background: #FFFFFF; */
+/* box-shadow: 0px 10px 19px rgba(24, 24, 24, 0.04);
+    border-radius: 12px;
+} */
+.statistics {
+    /* Rectangle 5 */
+
+
+    position: absolute;
+    width: 1140px;
+    height: 130px;
+    left: 220px;
+    top: 560px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
     box-shadow: 0px 10px 19px rgba(24, 24, 24, 0.04);
     border-radius: 12px;
+}
+
+.statistics img {
+    width: 70px;
+    height: 70px;
+    margin: 30px;
+}
+
+.statistics h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 28px;
+    /* identical to box height, or 104% */
+
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.statistics p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+    letter-spacing: 0.02em;
+
+    color: #212121;
+
+    opacity: 0.8;
+}
+
+.vl {
+    border-left: 1px solid #DFDFDF;
+    height: 70px;
+    margin-left: 144px;
+}
+
+.container:first-child {
+    /* Bitmap */
+
+
+    position: absolute;
+    width: 887px;
+    height: 591px;
+    left: -110px;
+    top: 782px;
+
+    background: url(.jpg);
+}
+
+.container {
+    /* Mask */
+    border-radius: 8px;
+    margin-left: 150px;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mark {
+    /* Grow up your busines */
+
+
+    position: absolute;
+    height: 100px;
+    left: 54.58%;
+    right: 9.79%;
+    top: 770px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    width: 100;
+    /* or 139% */
+
+
+    color: #212121;
+
 }
