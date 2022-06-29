@@ -250,3 +250,153 @@
     color: #212121;
 
 }
+/*Why you should chose us ends*/
+/*Services Part Begins*/
+.bold {
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 36px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: #212121;    
+}
+
+.subject {
+    display: block;
+    position: abolute;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    width: 374px;
+    height: 56px;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+    color: #212121;
+}
+/* Services Cards*/
+.cards {
+    display: flex;
+    padding: 0;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.card1 {
+    width: 350px;
+    height: 375px;
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+.card2 {
+    width: 350px;
+    height: 375px;
+    background: #Ffffff;
+    border-radius: 10px;
+}
+
+.card3 {
+    width: 350px;
+    height: 375px;
+    background: #FAFAFA;
+    border-radius: 10px;
+}
+
+.card1img {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.card2img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card3img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.def1 {
+    width: 180px;
+    height: 52px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #212121;
+}
+
+.def2 {
+    width: 116px;
+    height: 52px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    color: #212121;
+}
+
+.def3 {
+    width: 128px;
+    height: 26px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 26px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #212121;
+}
+
+.subscript {
+    width: 264px;
+    height: 78px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #212121;
+    opacity: 0.8;
+}
+/*Services Part Ends Here*/
