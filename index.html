@@ -19,10 +19,59 @@
     <title>Figma Clone</title>
   </head>
   <body>
+    <!--Pop Up Part Starts here-->
+    <div id="overlay"></div>
+    <div class="waitlist" id="waitlist">
+      <div class="waitlist-header">
+        <div class="title">Join Waitlist</div>
+        <button data-close-button class="close-button">&times;</button>
+      </div>
+      <div class="waitlist-para">
+        Register to join our web app waitlist where you would be able to manage
+        and track your shipment service
+      </div>
+      <div class="type">
+        <div class="full-name">Customer Type</div>
+        <div class="rectangle1">
+          <div id="border1" class="border1">
+            <div id="btnBusiness" class="business">Business</div>
+          </div>
+          <div id="border2" class="border2 active">
+            <div id="btnIndividual" class="individual">Individual</div>
+          </div>
+        </div>
+      </div>
+      <div class="name">
+        <div id="content1" class="f-name">Full Name</div>
+        <div class="rectangle2">
+          <div id="content2" class="plc1">Full Name</div>
+        </div>
+      </div>
+      <div class="ph-no">
+        <div class="ph-number">Phone Number</div>
+        <div class="rectangle3">
+          <div class="nu">+1</div>
+          <div class="arr">
+            <i class="arrow down"></i>
+          </div>
+          <div class="plc2">Enter Phone Number</div>
+        </div>
+      </div>
+      <div class="mail">
+        <div class="email">Email Address</div>
+        <div class="rectagle4">
+          <div class="plc3">Enter Email Address</div>
+        </div>
+      </div>
+      <div>
+        <div data-close-button class="rectangle5">
+          <div class="button">JOIN WAITING LIST</div>
+        </div>
+      </div>
+    </div>
+    <!--Pop Up Part endss here-->
+    <!--Navbar Part starts here-->
     <div class="header">
-      <!-- <div class="logo">
-      </div> -->
-
       <div class="navbar">
         <img src="logo_3_1-removebg-preview 1.png" alt="" />
         <ul>
@@ -32,7 +81,9 @@
           <li>Pricing</li>
           <li>Our Location</li>
         </ul>
-        <button id="btn1"><a href="#"> JOIN WAITING LIST</a></button>
+        <button data-waitlist-target="#waitlist" id="btn1">
+          <a href="#"> JOIN WAITING LIST</a>
+        </button>
       </div>
 
       <div class="content">
@@ -73,12 +124,23 @@
       </div>
     </div>
 
-    <!--next section-->
+    <!--Why You shoud chose us startss-->
 
     <div class="container">
       <!--video-->
       <div>
         <img src="Group 7.png" alt="" />
+        <img
+          style="
+            position: absolute;
+            width: 84px;
+            height: 84px;
+            left: 386px;
+            top: 1020px;
+          "
+          src="Group 5.png"
+          alt=""
+        />
       </div>
       <!--Right Part-->
       <div class="mark">
@@ -187,142 +249,137 @@
     <div class="services">
       <p class="bold">Services</p>
       <p class="subject">
-        We offer outstanding services on time,everytime at affordable rates.
+        We offer outstanding services on time,everytime<br />
+        at affordable rates.
       </p>
     </div>
-    <br /><br />
     <!--Service Cards-->
     <div class="cards">
       <div class="card1">
-        <br />
         <img class="cardimg" src="Group.png" />
-        <p class="def1">
-          <br />
-          Shipping to United States
-        </p>
+        <p class="def1">Shipping to United States</p>
         <p class="subscript">
-          <br />
           We ship to the United State from Lagos,Nigeria within 7 to 12 working
           days.
         </p>
       </div>
       <div class="card2">
-        <br />
         <img class="cardimg" src="XMLID_644_.png" />
-        <div class="def2">
-          <br />
-          Shipping to Nigeria
-        </div>
+        <div class="def2">Shipping to Nigeria</div>
         <div class="subscript">
-          <br />
           We ship to the United State from Lagos,Nigeria within 7 to 12 working
           days.
         </div>
       </div>
       <div class="card3">
-        <br />
         <img class="cardimg" src="Group (1).png" />
-        <div class="def3">
-          <br />
-          Procurement
-        </div>
-        <p class="subscript">
-          <br />
-          Transform ypur proucts acquisition process. We hlp you shop for your
+        <div class="def3">Procurement</div>
+        <p style="margin: 36px auto auto" class="subscript">
+          Transform your products acquisition process. We help you shop for your
           preferred items and ship to your destination within 7 to 12 working
           days.
         </p>
       </div>
     </div>
     <!--Services Part Ends Here-->
-    <br><br>
-    <!--Shipment Calender-->
+    <!--Shipment Calender starts here-->
     <div class="shipmentcalenderfull">
-      <div class="shipmentcalender">
-        <p class="bold">Shipment Calendar</p><br>
-        <p class="subject" style="width: 550px;">
-          Check out the dates we will be shipping from your City and send in your
-          items to our office.
-        </p>
+      <div>
+        <div style="margin-top: 100px" class="bold">Shipment Calendar</div>
+        <div class="subject1">
+          Check out the dates we will be shipping from your City and send in
+          your items to our office.
+        </div>
       </div>
-      <br><br>
       <div class="fullcalender">
+        <!-- Left Part -->
         <div class="shipmentcolumn">
-          <div class="selecteddiv">Houston to Lagos</div>
-          <br />
-          <div class="remainingdiv">Minneapolis to Lagos</div>
-          <br />
-          <div class="remainingdiv">Lagos to USA</div>
-          <br />
-          <div class="remainingdiv">Minneapolis to Lagos</div>
-          <br />
-          <div class="remainingdiv">Lagos to USA</div>
-          <br />
+          <div class="selecteddiv">
+            <p>Houston to Lagos</p>
+          </div>
+          <div class="remainingdiv">
+            <p>Minneapolis to Lagos</p>
+          </div>
+          <div class="remainingdiv">
+            <p>Lagos to USA</p>
+          </div>
+          <div class="remainingdiv">
+            <p>Minneapolis to Lagos</p>
+          </div>
+          <div class="remainingdiv">
+            <p>Lagos to USA</p>
+          </div>
         </div>
         <div class="sliderrectangle"></div>
+        <!-- Calender Part -->
         <div class="calender">
-          <div class="month">MAY 2022</div>
-          <img class="leftbutton" src="leftbutton.jpg" alt="">
-          <img class="rightbutton" src="rightbutton.jpg" alt="">
-          <table class="calendertable">
-            <tr>
-              <th class="weekday">SUN</th>
-              <th class="weekday">MON</th>
-              <th class="weekday">TUE</th>
-              <th class="weekday">WED</th>
-              <th class="weekday">THU</th>
-              <th class="weekday">FRI</th>
-              <th class="weekday">SAT</th>
-            </tr>
-            <tr>
-              <td class="prevmonth">29</td>
-              <td class="prevmonth">30</td>
-              <td class="monthdate">1</td>
-              <td class="monthdate">2</td>
-              <td class="monthdate">3</td>
-              <td class="monthdate">4</td>
-              <td class="monthdate">5</td>
-            </tr>
-            <tr>
-              <td class="monthdate">6</td>
-              <td class="monthdate">7</td>
-              <td class="monthdate">8</td>
-              <td class="monthdate">9</td>
-              <td class="monthdate">10</td>
-              <td class="monthdate">11</td>
-              <td class="monthdate">12</td>
-            </tr>
-            <tr>
-              <td class="monthdate">13</td>
-              <td class="monthdate">14</td>
-              <td class="shipmentdate">15</td>
-              <td class="monthdate">16</td>
-              <td class="shipmentdate">17</td>
-              <td class="shipmentdate">18</td>
-              <td class="monthdate">19</td>
-            </tr>
-            <tr>
-              <td class="monthdate">20</td>
-              <td class="monthdate">21</td>
-              <td class="monthdate">21</td>
-              <td class="monthdate">23</td>
-              <td class="monthdate">24</td>
-              <td class="shipmentdate">25</td>
-              <td class="monthdate">26</td>
-            </tr>
-            <tr>
-              <td class="monthdate">27</td>
-              <td class="monthdate">28</td>
-              <td class="monthdate">29</td>
-              <td class="monthdate">30</td>
-              <td class="monthdate">31</td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
+          <div class="calender-head">
+            <!-- calender header -->
+            <div class="month">MAY 2022</div>
+            <img class="leftbutton" src="leftbutton.png" alt="" />
+            <img class="rightbutton" src="rightbutton.png" alt="" />
+          </div>
+          <div class="calendertable">
+            <div class="table">
+              <div class="weekday">SUN</div>
+              <div class="weekday">29</div>
+              <div class="weekday">6</div>
+              <div class="weekday">13</div>
+              <div class="weekday">20</div>
+              <div class="weekday">27</div>
+            </div>
+            <div class="table">
+              <div class="weekday">MON</div>
+              <div class="weekday">30</div>
+              <div class="weekday">7</div>
+              <div class="weekday">14</div>
+              <div class="weekday">21</div>
+              <div class="weekday">28</div>
+            </div>
+            <div class="table">
+              <div class="weekday">TUE</div>
+              <div class="weekday">1</div>
+              <div class="weekday">8</div>
+              <div class="weekday holiday">15</div>
+              <div class="weekday">22</div>
+              <div class="weekday">29</div>
+            </div>
+            <div class="table">
+              <div class="weekday">WED</div>
+              <div class="weekday">2</div>
+              <div class="weekday">9</div>
+              <div class="weekday">16</div>
+              <div class="weekday">23</div>
+              <div class="weekday">30</div>
+            </div>
+            <div class="table">
+              <div class="weekday">THU</div>
+              <div class="weekday">3</div>
+              <div class="weekday">10</div>
+              <div class="weekday holiday">17</div>
+              <div class="weekday">24</div>
+              <div class="weekday">31</div>
+            </div>
+            <div class="table">
+              <div class="weekday">FRI</div>
+              <div class="weekday">4</div>
+              <div class="weekday">11</div>
+              <div class="weekday holiday">18</div>
+              <div class="weekday holiday">25</div>
+              <div class="weekday"></div>
+            </div>
+            <div class="table">
+              <div class="weekday">SAT</div>
+              <div class="weekday">5</div>
+              <div class="weekday">12</div>
+              <div class="weekday">19</div>
+              <div class="weekday">26</div>
+              <div class="weekday"></div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      <!--shipment calender end-->
+    </div>
+    <!-- shipment calender end-->
   </body>
 </html>
