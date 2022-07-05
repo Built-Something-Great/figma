@@ -1,3 +1,477 @@
+/* Pop up part starts here */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.waitlist {
+    position: fixed;
+    width: 620px;
+    height: 732px;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(0);
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.101961);
+    border-radius: 12px;
+    z-index: 10;
+}
+
+.waitlist.active {
+    transform: translate(-50%, -50%)scale(1);
+
+}
+
+.title {
+    /* Join Waitlist */
+
+
+    position: absolute;
+    width: 191px;
+    height: 50px;
+    left: calc(50% - 191px/2 - 174.5px);
+    top: calc(50% - 50px/2 - 301px);
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    /* identical to box height, or 156% */
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+
+}
+
+.close-button {
+    /* Vector */
+
+
+    position: absolute;
+    left: 545px;
+    top: 37px;
+    font-size: 2.8rem;
+
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.waitlist-para {
+    /* Lorem ipsum dolor si */
+
+
+    position: absolute;
+    left: 40px;
+    top: 107px;
+    width: 535px;
+    height: 56px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+
+    color: #212121;
+
+    opacity: 0.8;
+}
+
+.full-name {
+    /* Full Name */
+
+
+    position: absolute;
+    width: 112px;
+    height: 24px;
+    left: calc(50% - 112px/2 - 214px);
+    top: calc(50% - 24px/2 - 161px);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+
+}
+
+.rectangle1 {
+    /* Rectangle 36 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 540px;
+    height: 60px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 60px/2 - 113px);
+
+    background: #FFFFFF;
+    border: 1px solid #E0DEE2;
+    border-radius: 8px;
+}
+
+
+.business {
+    /* Business */
+
+
+    position: absolute;
+    width: 68px;
+    height: 20px;
+    left: 93px;
+    top: calc(50% - 20px/2);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+
+    color: #535156;
+    cursor: pointer;
+
+}
+
+.business.active {
+
+    color: #FFFFFF;
+    cursor: text;
+}
+
+.border1.active {
+    /* Rectangle 35 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 270px;
+    height: 52px;
+    left: 3px;
+    top: 3px;
+    background: #212121;
+    border-radius: 6px;
+}
+
+
+
+
+.individual {
+    /* Individual */
+
+
+    position: absolute;
+    width: 76px;
+    height: 20px;
+    left: 97px;
+    top: calc(50% - 20px/2);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.individual.active {
+    color: #535156;
+    cursor: pointer;
+    left: 363px;
+
+}
+
+.border2.active {
+    /* Rectangle 35 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 270px;
+    height: 52px;
+    left: 266px;
+    top: 3px;
+    background: #212121;
+    border-radius: 6px;
+}
+
+.f-name {
+    /* Full Name */
+
+
+    position: absolute;
+    height: 24px;
+    left: calc(50% - 76px/2 - 232px);
+    top: calc(50% - 24px/2 - 51px);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+
+}
+
+.rectangle2 {
+    /* Rectangle 4 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 540px;
+    height: 60px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 60px/2 - 4px);
+
+    background: #FFFFFF;
+    border: 1px solid #E0DEE2;
+    border-radius: 8px;
+}
+
+.plc1 {
+    /* Full Name */
+
+
+    position: absolute;
+    height: 22px;
+    left: calc(50% - 74px/2 - 218px);
+    top: 17px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #E0DEE2;
+}
+
+.ph-number {
+    /* Full Name */
+
+
+    position: absolute;
+    width: 127px;
+    height: 24px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 24px/2 + 58px);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+
+}
+
+.rectangle3 {
+    /* Rectangle 4 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 540px;
+    height: 60px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 60px/2 + 106px);
+
+    background: #FFFFFF;
+    border: 1px solid #E0DEE2;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.plc2 {
+    /* Enter Phone Number */
+
+
+
+    width: 156px;
+    height: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #E0DEE2;
+}
+
+.nu {
+    width: 17px;
+    height: 22px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    margin-left: 14px;
+
+    color: #28252c;
+}
+
+.arr {
+    width: 10px;
+    height: 5.97px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: -2px;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.email {
+    /* Full Name */
+
+
+    position: absolute;
+    width: 127px;
+    height: 24px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 24px/2 + 168px);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #212121;
+}
+
+.rectagle4 {
+    /* Rectangle 4 */
+
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 540px;
+    height: 60px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 60px/2 + 216px);
+
+    background: #FFFFFF;
+    border: 1px solid #E0DEE2;
+    border-radius: 8px;
+}
+
+.plc3 {
+    /* Enter Email Address */
+
+
+    position: absolute;
+    width: 150px;
+    height: 22px;
+    left: calc(50% - 74px/2 - 218px);
+    top: 17px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #E0DEE2;
+}
+
+.rectangle5 {
+    /* Rectangle 2 */
+
+
+    position: absolute;
+    width: 540px;
+    height: 60px;
+    left: calc(50% - 540px/2);
+    top: calc(50% - 60px/2 + 300px);
+
+    background: #FE0000;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button {
+    /* JOIN WAITING LIST */
+    padding-top: 20px;
+    padding-left: 188px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 9;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Pop up part endss here */
+/* navbar part starts here */
 * {
     padding: 0;
     margin: 0;
@@ -19,7 +493,7 @@
     position: absolute;
     width: 752px;
     height: 448px;
-    left: 613px;
+    left: 667px;
     top: 132px;
 }
 
@@ -54,7 +528,7 @@
     position: absolute;
     width: 205px;
     height: 48px;
-    left: 1115px;
+    left: 1142px;
     top: 26px;
     background: #FE0000;
     border-radius: 8px;
@@ -67,8 +541,6 @@
 #btn1 a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -84,8 +556,6 @@
     height: 132px;
     left: 150px;
     top: 187px;
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 700;
     font-size: 46px;
     line-height: 66px;
@@ -99,9 +569,6 @@
     height: 56px;
     left: 150px;
     top: 334px;
-
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -128,8 +595,6 @@
 #btn2 a {
     text-decoration: none;
     color: #fff;
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -139,17 +604,6 @@
     color: #FFFFFF
 }
 
-/* .statistics {
-    position: absolute;
-    width: 1140px;
-    height: 130px;
-    left: 163px;
-    top: 561.5px;
-
-    /* background: #FFFFFF; */
-/* box-shadow: 0px 10px 19px rgba(24, 24, 24, 0.04);
-    border-radius: 12px;
-} */
 .statistics {
     /* Rectangle 5 */
 
@@ -173,8 +627,6 @@
 }
 
 .statistics h2 {
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 600;
     font-size: 27px;
     line-height: 28px;
@@ -186,8 +638,6 @@
 }
 
 .statistics p {
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -234,12 +684,9 @@
 
     position: absolute;
     height: 100px;
-    left: 54.58%;
+    left: 792px;
     right: 9.79%;
     top: 770px;
-
-    font-family: 'Rubik';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 50px;
@@ -250,47 +697,33 @@
     color: #212121;
 
 }
+
 /*Why you should chose us ends*/
 /*Services Part Begins*/
 .bold {
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-size: 36px;
-    align-items: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: normal;
+    /* Services */
     font-weight: 600;
+    font-size: 36px;
     line-height: 40px;
-    font-feature-settings: 'liga' off;
-    color: #212121;    
+    color: #212121;
+    text-align: center;
+    margin-top: 61px;
 }
 
 .subject {
-    display: block;
-    position: abolute;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-size: 16px;
+    /* We offer outstanding services on time, every time at affordable rates. */
     line-height: 28px;
-    font-weight: 300;
+    /* or 175% */
+    text-align: center;
     letter-spacing: 0.02em;
-    width: 374px;
-    height: 56px;
-    opacity: 0.8;
-    margin-left: auto;
-    margin-right: auto;
     color: #212121;
+    margin-top: 20px;
 }
+
 /* Services Cards*/
 .cards {
     display: flex;
-    padding: 0;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 40px;
     justify-content: center;
     gap: 45px;
 }
@@ -316,23 +749,20 @@
     background: #FAFAFA;
     border-radius: 10px;
 }
+
 .cardimg {
     display: block;
+    margin: 40px auto 30px;
     width: 75px;
     height: 75px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 .def1 {
     width: 180px;
     height: 52px;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     line-height: 26px;
-    display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -342,10 +772,6 @@
 .def2 {
     width: 116px;
     height: 52px;
-    display: block;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     text-align: center;
     line-height: 26px;
@@ -358,209 +784,203 @@
 .def3 {
     width: 128px;
     height: 26px;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     text-align: center;
     line-height: 26px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     color: #212121;
 }
 
 .subscript {
-    width: 264px;
+    width: 257px;
     height: 78px;
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     text-align: center;
     line-height: 26px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto auto;
     color: #212121;
     opacity: 0.8;
 }
 
 /*Services Part Ends Here*/
+
 /*Shipping calender*/
-.shipmentpartend{
-    display: block;
+
+.subject1 {
+    /* Check out the dates we will be shipping from your City and send in your items to our office. */
+    line-height: 28px;
+    max-width: 552px;
+    /* or 175% */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    opacity: 0.8;
+    margin: 20px auto 50px;
 }
+
+/* Full Calender */
+.shipmentcalenderfull {
+    display: block;
+    height: 689px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fullcalender {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 50px;
+    height: 380px;
+    width: 363px;
+}
+
+/* Left Part */
+.shipmentcolumn {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 215px;
+    gap: 20px;
+}
+
+.selecteddiv {
+    /* Rectangle 2 */
+    box-sizing: border-box;
+    width: 350px;
+    height: 60px;
+    background: #ffe3e3;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+}
+
+.selecteddiv p {
+    /* Houston to Lagos */
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    text-transform: uppercase;
+    color: #FE0000;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.remainingdiv {
+    /* Rectangle 3 */
+    box-sizing: border-box;
+    width: 350px;
+    height: 60px;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+}
+
+.remainingdiv p {
+    /* Houston to Lagos */
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: #212121;
+    opacity: 0.7;
+}
+
+.sliderrectangle {
+    /* Rectangle 12 */
+    position: absolute;
+    width: 5px;
+    height: 72px;
+    left: 573px;
+    top: 2259px;
+    background: #E4E4E4;
+    border-radius: 30px;
+}
+
+/* left part ends */
+/* Calender Part Starts */
+
 .calender {
+    /* Rectangle Copy 7 */
+    position: absolute;
     width: 745px;
     height: 523px;
+    left: 610px;
+    top: 2231px;
     background: #FFFFFF;
     box-shadow: 0px 5px 21px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    position: absolute;
-    left: 606px;
 }
 
+/* Calender Header */
 .month {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 500;
+    /* MAY 2022 */
+
+
+    position: absolute;
+    width: 135px;
+    height: 20px;
+    left: 35px;
+    top: 40px;
     font-size: 28px;
     line-height: 20px;
     /* identical to box height, or 71% */
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
     color: #212121;
-    position: absolute;
-    left: 91px;
 }
 
+.leftbutton {
+    position: absolute;
+    left: 630px;
+    top: 35px;
+    width: 25px;
+    height: 25px;
+}
+
+.rightbutton {
+    position: absolute;
+    left: 680px;
+    top: 35px;
+    width: 25px;
+    height: 25px;
+}
+
+/* Calender Table */
 .calendertable {
-    border-spacing: 32px;
-    margin-left: auto;
-    margin-right: auto;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 25px;
 }
 
 .weekday {
-    font-family: 'Rubik';
-    font-style: normal;
+    /* textlabel_S */
+    width: 37px;
+    height: 16px;
     font-weight: 400;
     font-size: 18px;
     line-height: 16px;
     /* identical to box height, or 89% */
-
-    text-align: center;
-    text-transform: uppercase;
-    width: 55px;
-    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #212121;
-
     mix-blend-mode: normal;
     opacity: 0.78;
+    padding: 25px;
 }
 
-.monthdate {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 16px;
-    /* identical to box height, or 80% */
-
-    text-align: center;
-    text-transform: uppercase;
-    width: 55px;
-    height: 55px;
-    color: #212121;
-}
-
-.prevmonth {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 16px;
-    /* identical to box height, or 80% */
-
-    text-align: center;
-
-    color: #212121;
-
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    width: 55px;
-    height: 55px;
-}
-
-.shipmentdate {
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 16px;
-    /* identical to box height, or 80% */
-    border-radius: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    width: 55px;
-    height: 55px;
+.holiday {
+    background: #FE0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #FFFFFF;
-    background: red;
+    border-radius: 50%;
 }
 
-.selecteddiv {
-    width: 350px;
-    height: 60px;
-    background: rgba(254, 0, 0, 0.317);
-    border: 1px solid #E6E6E6;
-    border-radius: 8px;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 125% */
-    align-items: center;
-    text-align: center;
-    display: flex;
-    text-transform: uppercase;
-    color: #FE0000;
-    justify-content: center;
-}
-
-.remainingdiv {
-    width: 350px;
-    height: 60px;
-    border: 1px solid #E6E6E6;
-    border-radius: 8px;
-    justify-content: center;
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    /* identical to box height, or 125% */
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #212121;
-    opacity: 0.7;
-}
-.shipmentcolumn{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 180px;
-    gap: 10px;
-}
-.fullcalender{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-}
-.sliderrectangle{
-position: absolute;
-width: 5px;
-height: 72px;
-left: 535px;
-background: #E4E4E4;
-border-radius: 30px;
-}
-.leftbutton{
-    position: absolute;
-    left: 570px;
-    width: 25px;
-    height: 25px;
-    top: 15px;
-}
-.rightbutton{
-    position: absolute;
-    left: 620px;
-    width: 25px;
-    height: 25px;
-    top: 15px;
-}
-.shipmentcalenderfull{
-    display: block;
-}
 /*Shipping calender ends*/
