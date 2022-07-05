@@ -1,5 +1,7 @@
 /* Pop up part starts here */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -559,7 +561,7 @@
     font-weight: 700;
     font-size: 46px;
     line-height: 66px;
-    font-feature-settings: 'liga'off;
+    font-feature-settings: 'liga' off;
     color: #212121;
 }
 
@@ -984,3 +986,317 @@
 }
 
 /*Shipping calender ends*/
+/*How it works start*/
+.hiw {
+    background-image: url("worldmap.jpg");
+    width: 1440px;
+    height: 1473px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hiwheading {
+    display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    font-feature-settings: 'liga' off;
+    color: #212121;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.hiwsubheader {
+    /*width: 344px;*/
+    height: 28px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circle1 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 147px;
+    background: #FFFFFF;
+    border: 3px solid #FE0000;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.num1 {
+    position: relative;
+    width: 19px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height, or 111% */
+    font-feature-settings: 'liga' off;
+    color: #FE0000;
+    top: 12px;
+}
+
+.dashed1 {
+    position: relative;
+    width: 495px;
+    height: 70px;
+    left: 146px;
+    border-top: 3px dashed #FE0000;
+    display: inline-block;
+    margin-top: 75px;
+}
+
+.circle2 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 76px;
+    background: #FFFFFF;
+    border: 8px solid #FE0000;
+    box-shadow: 0px 6px 41px rgba(254, 0, 0, 0.13);
+    border-radius: 50%;
+}
+.part {
+    display: flex;
+    flex-direction: row;
+}
+
+.line1 {
+    position: relative;
+    width: 8px;
+    height: 195px;
+    left: 716px;
+    background: #FE0000;
+    margin-top: -264px;
+}
+
+.line2 {
+    position: relative;
+    width: 8px;
+    height: 195px;
+    left: 716px;
+    background: #C2C2C2;
+}
+
+.secondline {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle3 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 645px;
+    background: #FFFFFF;
+    border: 8px solid #C2C2C2;
+    box-shadow: 0px 4px 11px rgba(205, 205, 205, 0.3);
+    border-radius: 50%;
+}
+
+.dashed2 {
+    position: relative;
+    width: 495px;
+    height: 0px;
+    left: 638px;
+    margin-top: 80px;
+    border-top: 3px dashed #C2C2C2;
+}
+
+.circle4 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 568px;
+    background: #FFFFFF;
+    border: 3px solid #C2C2C2;
+    border-radius: 50%;
+    margin-top: 45px;
+}
+
+.num2 {
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    left: 20px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height, or 111% */
+    font-feature-settings: 'liga' off;
+    color: #C9C9C9;
+    top: 12px;
+}
+
+.line3 {
+    position: relative;
+    width: 8px;
+    height: 390px;
+    left: 716px;
+    background: #C2C2C2;
+    margin-top: -250px;
+}
+
+.thirdline {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.circle5 {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    left: 147px;
+    background: #FFFFFF;
+    border: 3px solid #C9C9C9;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.num3 {
+    position: absolute;
+    width: 24px;
+    height: 40px;
+    left: 20px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    /* identical to box height, or 111% */
+    font-feature-settings: 'liga' off;
+    color: #C9C9C9;
+    top: 12px;
+}
+
+.dashed3 {
+    position: relative;
+    width: 495px;
+    height: 0px;
+    left: 150px;
+    margin-top: 80px;
+    border-top: 3px dashed #C2C2C2;
+}
+
+.circle6 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 78px;
+    background: #FFFFFF;
+    border: 8px solid #C2C2C2;
+    box-shadow: 0px 4px 11px rgba(205, 205, 205, 0.3);
+    border-radius: 50%;
+}
+
+.hiwboxheader {
+    position: relative;
+    width: 349px;
+    height: 26px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height, or 130% */
+    color: #212121;
+    text-align: left;
+    margin-left: 35px;
+}
+
+.hiwboxtext {
+    position: relative;
+    width: 413px;
+    height: 78px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: #212121;
+    opacity: 0.8;
+    justify-content: center;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+    margin-left: 35px;
+}
+
+.hiwbox1 {
+    position: relative;
+    width: 475px;
+    height: 179px;
+    left: 150px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 41px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 84px;
+}
+
+.hiwbox2 {
+    position: relative;
+    width: 475px;
+    height: 179px;
+    left: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 41px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 220px;
+}
+
+.hiwbox3 {
+    position: relative;
+    width: 475px;
+    height: 179px;
+    left: -550px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 41px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 116px;
+}
+
+.hiwboxtext3 {
+    position: relative;
+    width: 413px;
+    height: 78px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    color: #212121;
+    opacity: 0.8;
+    justify-content: center;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+}
+
+/*How it works end*/
