@@ -1300,3 +1300,247 @@
 }
 
 /*How it works end*/
+/* shipping pricing part starts here */
+.sp{
+    padding-top: 4%;
+}
+.upper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 103vw; */
+    height: 166px;
+}
+.upper .first{
+    height: 40px;
+    width: 293px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: #212121;
+    text-align: center;
+    /* padding-top: 2%; */
+}
+.upper .sec{
+    width: 298px;
+    height: 28px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    opacity: 0.8;
+    text-align: center;
+    /* padding-top: 3%; */
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    height: 412px;
+    width: 1109px;
+    margin-left: 150px;
+}
+.main .left,.middle,.right{
+    width: 343px;
+    height: 412px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 21px rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+}
+.t1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #212121;
+    padding-top: 9%;
+}
+.t2{
+    padding-top: 3px;
+    font-size: 23px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    color: #212121;
+    line-height: 35px;
+}
+.t3{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 22px;
+    color: #212121;
+    padding-top: 15px;
+}
+.line{
+    position: relative;
+    width: 310px;
+    height: 1px;
+    margin:0px auto;
+    top: 29px;
+    background: #EBEBEB;
+    border-radius: 1px;
+    padding-top: 0%;
+}
+.t4{
+    height: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212121;
+    opacity: 0.8;
+    padding-top: 18%;
+}
+.t5{
+    width: 299px;
+    height: 56px;
+    margin: 0px auto;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+    color: #212121;
+    padding-top: 9%;
+}
+.t6{
+    width: 310px;
+    height: 60px;
+    border: 1px solid #E6E6E6;
+    border-radius: 8px;
+    margin: 90px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.t6 .no{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212121;
+    padding-left: 3%;
+}
+/* shipping pricing ends here */
+/* lowest part css starts here.. */
+*{
+    margin: 0;
+    padding: 0;
+}
+.bottompart{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0%;
+    background: #FBFBFB;
+}
+.b_upper{
+    padding-top: 4%;
+    height: 256px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.b_upper .box1{
+    margin-left: 150px;
+}
+.b_upper .box1 .b_logo{
+    width: 88.98px;
+    height: 60px;
+    text-align: center;
+}
+.b_upper .box1 .text{
+    padding-left: 4%;
+    padding-top: 15%;
+    height: 33px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 33px;
+    color: #212121;
+}
+.b_upper .box1 .icons{
+    padding-top: 20%;
+}
+.b_upper .box1 .icons .icon1,.icon2,.icon3,.icon4{
+    display: inline;
+    height: 19.83px;
+    padding: 7px;
+    justify-content: space-between;
+}
+.b_upper .t1{
+    height: 33px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 600;
+    color: #212121;
+    padding-top: 1%;
+}
+.b_upper .t2{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #212121;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+.b_upper .box4 .smallbox{
+    height: 58px;
+    width: 265px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 0%;
+}
+.b_upper .box4 .smallbox .text{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 33px;
+    color: #FE0000;
+    mix-blend-mode: normal;
+    padding-left: 7%;
+}
+.b_upper .box4 .smallbox .icon{
+    background: #FE0000;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+}
+.b_upper .box2,.box3,.box4{
+    padding-left: 12%;
+    padding-top: 0%;
+}
+.bottompart .middleline{
+    height: 1px; 
+    background: #E8E8E8;
+}
+.b_lower{
+    display: flex;
+    align-items: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+.b_lower .copy1,.copy2{
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212121;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+.b_lower .copy1{
+    margin-left: 155px;
+}
+.b_lower .copy2{
+    padding-left: 52%;
+}
+/* lowest part css ends here.. */
